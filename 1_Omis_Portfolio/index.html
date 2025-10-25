@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omi - Developer | Portfolio Website</title>
+    <meta
+      name="description"
+      content="Omi's Portfolio Website showcasing projects and skills as a developer."
+    />
+    <meta
+      name="keywords"
+      content="Omi, Portfolio, Developer, Projects, Skills, Web Development"
+    />
+    <meta name="author" content="Omi" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og.url"
+      content="https://github.com/omkarzcodes/Project_Series.git"
+    />
+    <meta property="og:title" content="Omi - Developer | Portfolio Website" />
+    <meta
+      property="og:description"
+      content="Omi's Portfolio Website showcasing projects and skills as a developer."
+    />
+    <meta property="og:image" content="./images/og-image.jpg" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://github.com/omkarzcodes/Project_Series"
+    />
+    <meta name="twitter:title" content="Omi - Developer | Portfolio Website" />
+    <meta
+      name="twitter:description"
+      content="Omi's Portfolio Website showcasing projects and skills as a developer."
+    />
+    <meta name="twitter:image" content="./images/og-image.jpg" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts/googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JSON-LD format  -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Omi",
+        "url": "https://github.com/omkarzcodes/Project_Series.git"
+      }
+    </script>
+  </head>
+
+  <>
+       <!-- ========================================
+         HEADER - Top navigation bar
+         Sticky rahega scroll karne pe bhi
+         ======================================== -->
+    
+    <header>
+        <nav>
+            <!-- Logo/Name - Left side -->
+            <div class="logo">YN</div>
+            
+            <!-- Navigation Menu - Desktop pe visible, mobile pe hidden (CSS se) -->
+            <ul class="nav-menu">
+                <!-- href="#home" = same page pe #home id wale element pe jump -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <!-- Theme Toggle Button - Dark/Light mode -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                🌙
+            </button>
+            
+            <!-- Hamburger Menu - Mobile pe visible (CSS se) -->
+            <!-- 3 spans = 3 lines of hamburger icon -->
+            <div class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero fade-in">
+        <div class="hero-content">
+            <!-- Main heading - Page pe sirf EK h1 hona chahiye (SEO) -->
+            <h1>
+                Hi, I'm 
+                <!-- typing-text class = JavaScript se typing animation -->
+                <span class="highlight typing-text"></span>
+            </h1>
+            
+            <!-- Tagline - Short description -->
+            <p class="tagline">Web Developer | Problem Solver | Learner</p>
+            
+            <!-- Detailed introduction -->
+            <p class="description">
+                I build responsive websites and web applications using modern technologies.
+                Currently learning full-stack development and exploring new frameworks.
+            </p>
+            
+            <!-- Call-to-Action Buttons -->
+            <div class="cta-buttons">
+                <!-- btn = base button styles, btn-primary = primary color -->
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        
+        <!-- Hero Image - Profile photo -->
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Your Name - Web Developer smiling at workspace" loading="eager">
+        </div>
+    </section>
+    
+    <section id="about" class="about fade-in">
+        <!-- Section heading - h2 (h1 ke baad hierarchy) -->
+        <h2>About Me</h2>
+        
+        <div class="about-content">
+            <p>
+                I'm a passionate web developer from Mumbai, India. I started my coding 
+                journey in 2025 and fell in love with creating things on the internet.
+                From simple landing pages to complex web applications, I enjoy bringing 
+                ideas to life through code.
+            </p>
+            <p>
+                My goal is to build user-friendly, accessible, and performant websites 
+                that solve real problems. I'm constantly learning new technologies and 
+                improving my skills to stay current in this ever-evolving field.
+            </p>
+            <p>
+                When I'm not coding, you can find me reading tech blogs, contributing to 
+                open source projects, playing video games, or exploring new places in Mumbai.
+            </p>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills fade-in">
+        <h2>My Skills</h2>
+        
+        <!-- Grid container - CSS Grid se layout -->
+        <div class="skills-grid">
+            <!-- Har skill ek card -->
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Semantic markup, accessibility, forms, SEO optimization, web standards</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid, animations, transitions, responsive design, modern layouts</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>ES6+, DOM manipulation, async programming, APIs, modern frameworks</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Responsive Design</h3>
+                <p>Mobile-first approach, media queries, flexible layouts, cross-device testing</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
+                <p>Version control, branching, collaboration, pull requests, open source</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Web Performance</h3>
+                <p>Optimization, lazy loading, caching, minification, Lighthouse audits</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects fade-in">
+        <h2>Projects</h2>
+        
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <!-- Project image - loading="lazy" = scroll pe load (performance) -->
+                <img src="images/project1.jpg" alt="Personal Portfolio Website screenshot" loading="lazy" class="project-image">
+                
+                <div class="project-info">
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A responsive portfolio website built with HTML, CSS, and JavaScript. 
+                        Features include dark mode, smooth animations, and form validation.
+                    </p>
+                    
+                    <!-- Tech stack tags -->
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    
+                    <!-- Project links -->
+                    <div class="project-links">
+                        <!-- target="_blank" = naye tab mein kholo -->
+                        <!-- rel="noopener noreferrer" = security (window.opener access prevent) -->
+                        <a href="https://github.com/your-username/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-small">
+                            View Code
+                        </a>
+                        <a href="https://your-username.github.io/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Card 2 - Placeholder -->
+            <div class="project-card">
+                <img src="images/project-placeholder.jpg" alt="Project coming soon" loading="lazy" class="project-image">
+                <div class="project-info">
+                    <h3>Todo Application</h3>
+                    <p>Coming soon... A task management app with local storage and filtering.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Card 3 - Placeholder -->
+            <div class="project-card">
+                <img src="images/project-placeholder.jpg" alt="Project coming soon" loading="lazy" class="project-image">
+                <div class="project-info">
+                    <h3>Weather Dashboard</h3>
+                    <p>Coming soon... Real-time weather data with charts and forecasts.</p>
+                    <div class="project-tags">
+                        <span class="tag">API</span>
+                        <span class="tag">Charts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact fade-in">
+        <h2>Get In Touch</h2>
+        <p class="contact-intro">
+            I'm always open to new opportunities, collaborations, and interesting projects. 
+            Feel free to reach out!
+        </p>
+        
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name"
+                    placeholder="Your Name" 
+                    required
+                    autocomplete="name"
+                >
+                <!-- Error message span - JavaScript se populate hoga -->
+                <span class="error-message" id="nameError"></span>
+            </div>
+            
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <!-- type="email" = basic email validation by browser -->
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="your.email@example.com" 
+                    required
+                    autocomplete="email"
+                >
+                <span class="error-message" id="emailError"></span>
+            </div>
+            
+            <!-- Message Field -->
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea 
+                    id="message" 
+                    name="message"
+                    rows="5" 
+                    placeholder="Your message here..." 
+                    required
+                ></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+            
+            <!-- Submit Button -->
+            <!-- type="submit" = form submit trigger (not just button click) -->
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        
+        <!-- Social Links -->
+        <div class="social-links">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+                <!-- Email link - mailto: opens email client -->
+                <a href="mailto:your.email@example.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
+                    📧
+                </a>
+                <a href="https://github.com/your-username" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/your-profile" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+                <a href="https://twitter.com/your-handle" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                    Twitter
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>
+            &copy; 2025 Your Name. All rights reserved.
+        </p>
+        <p class="footer-links">
+            <a href="#home">Back to Top</a> | 
+            <a href="https://github.com/your-username/my-portfolio" target="_blank" rel="noopener noreferrer">View Source</a>
+        </p>
+    </footer>
+
+    
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        ↑
+    </button>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
